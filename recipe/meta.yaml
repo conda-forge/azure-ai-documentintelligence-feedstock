@@ -1,13 +1,13 @@
 {% set name = "azure-ai-documentintelligence" %}
-{% set version = "1.0.0b4" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 1aa36f0617b0c129fdc82b039b7084fd5b69af08e8e0cb500108b9f6efd61b36
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: c8b6efc0fc7e65d7892c9585cfd256f7d8b3f2b46cecf92c75ab82e629eac253
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
     - python >=3.8
     - pip
   run:
+    - typing_extensions >=4.6.0
     - python >=3.8
     - isodate >=0.6.1
     - azure-core >=1.30.0
