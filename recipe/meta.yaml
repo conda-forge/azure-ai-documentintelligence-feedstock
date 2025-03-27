@@ -1,5 +1,5 @@
 {% set name = "azure-ai-documentintelligence" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 246ec4d95316585175b38f687ffde17b394620221af966f635cec15a81c5b7cc
+  sha256: 4d75a2513f2839365ebabc0e0e1772f5601b3a8c9a71e75da12440da13b63484
 
 build:
   noarch: python
